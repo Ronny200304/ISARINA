@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "Para ti ❤️";
+}
+
+<div class="inicio" id="inicio">
+
+    <div class="corazon">♥</div>
+
+    <h1>Tengo algo que decirte, princesa...</h1>
+
+    <p>
+        Hay cosas que a veces son difíciles de decir ,
+        así que decidí escribirlas especialmente para ti.
+    </p>
+
+    <button onclick="mostrarCarta()">
+        Leeme y descubre ❤️
+    </button>
+
+</div>
+
+
+<div class="carta" id="carta">
+
+    <div class="corazon">♥</div>
+
+    <h1>Para una persona muy especial</h1>
+
+    <p>
+        Gracias por llegar a mi vida y por convertirte, poco a poco,
+        en una persona tan especial para mí.
+    </p>
+
+    <p>
+        Desde aquel momento en que te conocí, hubo algo que me hizo
+        pensar que nuestra conexión y nuestra química serían
+        realmente inigualables.
+    </p>
+
+    <p>
+        Admiro muchísimo la mujer que eres. Eres una persona
+        sumamente inteligente, preparada, elocuente y, sobre todo,
+        muy clara al expresar lo que piensas y sientes.
+        Esa claridad tuya es una de las cosas que más me encanta de ti.
+    </p>
+
+    <p>
+        Te quiero muchísimo y, sin importar qué nombre llegue a tener
+        nuestra relación, ya sea una amistad o aquello que la vida
+        tenga destinado para nosotros, deseo de corazón que nunca
+        perdamos este vínculo tan bonito que hemos construido.
+    </p>
+
+    <p>
+        Espero que siempre podamos conservar el respeto, el cariño
+        y esa manera tan especial de estar presentes el uno para el otro.
+    </p>
+
+    <p>
+        Siempre te he dicho lo hermosa que eres, pero quiero que sepas
+        que cuando lo digo no me refiero solamente a tu belleza exterior.
+        También admiro muchísimo la persona que eres por dentro,
+        tu forma de pensar, tu manera de ser y ese corazón que tienes.
+    </p>
+
+    <p>
+        Le pido a Dios que te bendiga muchísimo, que cuide siempre
+        de ti y que te permita alcanzar cada una de las cosas que
+        te propongas.
+    </p>
+
+    <p>
+        Y, sobre todo, gracias por todo.
+        Quizás no sabes cuánto me has ayudado simplemente estando ahí,
+        acompañándome y brindándome tu apoyo en esos momentos en los
+        que te he necesitado.
+    </p>
+
+    <p>
+        Puede que estas palabras no sean suficientes para expresar
+        todo lo que significas para mí, pero quería que tuvieras
+        un pequeño espacio donde pudieras saberlo.
+    </p>
+
+    <div class="firma">
+        Con mucho respeto,<br>
+        <strong>Rony ❤️</strong>
+    </div>
+
+</div>
+
+
+<script>
+
+    function mostrarCarta() {
+
+        document.getElementById("inicio").style.display = "none";
+
+        document.getElementById("carta").style.display = "block";
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
+
+</script>

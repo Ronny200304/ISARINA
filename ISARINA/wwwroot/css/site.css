@@ -1,0 +1,167 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffd6e7, #ffeef5, #ffd1e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5a3042;
+}
+
+/* Tarjeta principal */
+
+.dedicatoria {
+    width: 90%;
+    max-width: 650px;
+    padding: 50px 35px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(170, 70, 110, 0.25);
+    backdrop-filter: blur(10px);
+    animation: aparecer 1.5s ease;
+}
+
+/* Corazón */
+
+.corazon {
+    font-size: 70px;
+    color: #e75480;
+    animation: latido 1.5s infinite;
+    margin-bottom: 15px;
+}
+
+/* Título */
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #c43d6c;
+}
+
+/* Párrafos */
+
+p {
+    font-size: 19px;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+/* Firma */
+
+.firma {
+    margin-top: 35px;
+    font-size: 18px;
+    color: #8c405c;
+}
+
+    .firma strong {
+        font-size: 25px;
+        color: #d44778;
+    }
+
+
+/* Animación de entrada */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Animación del corazón */
+
+@keyframes latido {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+/* Pantalla inicial */
+
+.inicio {
+    text-align: center;
+    max-width: 650px;
+    padding: 50px 35px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(170, 70, 110, 0.25);
+    animation: aparecer 1.5s ease;
+}
+
+    .inicio h1 {
+        color: #c43d6c;
+        font-size: 40px;
+    }
+
+    .inicio p {
+        font-size: 19px;
+        line-height: 1.8;
+    }
+
+
+    /* Botón */
+
+    .inicio button {
+        margin-top: 25px;
+        padding: 14px 30px;
+        border: none;
+        border-radius: 30px;
+        background: #d44778;
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        .inicio button:hover {
+            transform: scale(1.08);
+        }
+
+
+/* Carta */
+
+.carta {
+    display: none;
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 50px 35px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(170, 70, 110, 0.25);
+    animation: aparecer 1.5s ease;
+}
+
+    .carta h1 {
+        color: #c43d6c;
+        font-size: 36px;
+    }
+
+    .carta p {
+        font-size: 18px;
+        line-height: 1.9;
+        margin: 25px 0;
+    }
